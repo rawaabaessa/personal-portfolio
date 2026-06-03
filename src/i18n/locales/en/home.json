@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "skills": "Skills",
+    "projects": "Projects"
+  },
+  "hero": {
+    "welcome": "Hey, I am",
+    "name": "Rawaa",
+    "title": "Web Developer",
+    "description": "I help businesses and individuals turn their ideas into professional and visually engaging websites, with a strong attention to detail to deliver a memorable user experience.",
+    "cv": "Download CV",
+    "contact": "Contact Me"
+  },
+  "skills": {
+    "title": "Tech Stack"
+  },
+  "work": {
+    "title": "My Works",
+    "view": "View Code",
+    "live": "Live Demo"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message"
+  },
+  "footer": {
+    "built": "Built by Rawaa Baessa @ 2026 All rights reserved"
+  }
+}

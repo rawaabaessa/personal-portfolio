@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+html[lang="en"] {
+  font-family: "Inter", sans-serif;
+}
+
+html[lang="ar"] {
+  font-family: "Cairo", sans-serif;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant light (&:where(.light, .light *));
+
+@theme {
+  --color-background: #262425;
+  --color-light-background: #f8f6fa;
+  --color-light-heading: #a56197;
+  --color-light-gray: #3c3a3a;
+  --color-light-gray-50: #63505f;
+  --color-secondery: #fac7ef;
+  --color-main-theme: "linear-gradient(to right, #9b3586, #35122e)";
+  --color-mid-pink: #9b3586;
+  --color-light-pink: #bf78a9;
+  --color-pink-50: #b587a8;
+  --color-dark-pink: #372532;
+}
+
+@utility text-90 {
+  font-size: 90px;
+}
+
+@utility text-32 {
+  font-size: 32px;
+}
+
+@layer utilities {
+  .shadow-pink {
+    box-shadow: 0 4px 10px rgba(155, 53, 134, 0.2);
+    @variant dark {
+      box-shadow:
+        inset 2px 2px 2px rgba(255, 255, 255, 0.25),
+        inset -2px -2px 2px rgba(255, 255, 255, 0.05);
+    }
+  }
+
+  .shadow-works {
+    box-shadow: 0 6px 10px rgba(155, 53, 134, 0.75);
+    @variant dark {
+      box-shadow:
+        inset 2px 2px 2px rgba(255, 255, 255, 0.25),
+        inset -2px -2px 2px rgba(255, 255, 255, 0.05);
+    }
+  }
+  .glow {
+    background: radial-gradient(
+      circle,
+      #9b3586 0%,
+      #35122e 40%,
+      transparent 70%
+    );
+  }
+  .blur-7xl {
+    filter: blur(250px);
+  }
+}
