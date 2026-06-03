@@ -1,16 +1,86 @@
-# React + Vite
+# 🌸 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive portfolio website built to showcase my front-end development skills, featured projects, and technical expertise.
 
-Currently, two official plugins are available:
+## 🚀 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This portfolio highlights my work as a Front-End Developer, featuring selected projects, technical skills, and contact information in a clean and interactive user experience.
 
-## React Compiler
+The project focuses on performance, responsiveness, accessibility, and smooth animations while maintaining a modern visual design.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Responsive design for all screen sizes
+- Dark & Light mode support
+- Multi-language support (Arabic & English)
+- Smooth page animations with Framer Motion
+- Project showcase section
+- Interactive skills section
+- Contact form
+- Modern and clean UI
+- Optimized user experience
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- React
+- Tailwind CSS
+- Framer Motion
+- React Router
+- i18next
+- Lucide React
+- Vite
+
+## 📂 Sections
+
+### Home
+
+A brief introduction presenting who I am and what I do.
+
+### Skills
+
+Technologies and tools I use for building modern web applications.
+
+### Projects
+
+A collection of selected projects with live demos and source code links.
+
+### Contact
+
+Easy ways to connect and collaborate.
+
+## 🎯 Development Focus
+
+This project demonstrates:
+
+- Component-based architecture
+- Responsive layouts
+- Theme switching (Dark / Light Mode)
+- Internationalization (i18n)
+- Animation implementation
+- Clean and reusable code structure
+- Modern UI development practices
+
+## 📱 Responsive Design
+
+The portfolio is fully optimized for:
+
+- Mobile Devices
+- Tablets
+- Desktop Screens
+
+## 🎨 Design Credit
+
+The UI design was provided as a Figma design and implemented as a fully responsive web application.
+
+**Frontend Development:** Rawaa Baessa
+
+## 🔮 Future Improvements
+
+- Advanced animations
+- Backend-powered contact form
+
+## 👩‍💻 Author
+
+**Rawaa Baessa**
+
+Front-End Developer passionate about building modern, responsive, and user-friendly web experiences.
