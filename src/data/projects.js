@@ -9,44 +9,39 @@ export const PROJECTS = [
     id: 1,
     title: "Mhami",
     image: mhamiImage,
-    technologies: ["React", "Tailwind"],
-    github: "https://github.com/yourusername/mhami",
-    liveDemo: "https://mhami.vercel.app",
+    technologies: ["React"],
+    github: "https://github.com/rawaabaessa/mahami-Reactjs",
+    liveDemo: "https://mahammi.vercel.app",
   },
-
   {
     id: 2,
+    title: "Qaaha",
+    image: qaahaImage,
+    technologies: ["HTML", "CSS", "Laravel"],
+    github:
+      "https://github.com/rawaabaessa/bootcamp-final-project-qaah-platform",
+  },
+  {
+    id: 3,
+    title: "Vegan Life",
+    image: veganLifeImage,
+    technologies: ["HTML", "CSS", "PHP"],
+    github: "https://github.com/rawaabaessa/mini-project-vegetarian-blog",
+  },
+  {
+    id: 4,
     title: "Foodi",
     image: foodiImage,
     technologies: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/yourusername/foodi",
-    liveDemo: "https://foodi.vercel.app",
-  },
-
-  {
-    id: 3,
-    title: "Sonriza",
-    image: sonrizaImage,
-    technologies: ["React", "Tailwind"],
-    github: "https://github.com/yourusername/sonriza",
-    liveDemo: "https://sonriza.vercel.app",
-  },
-
-  {
-    id: 4,
-    title: "Qaaha",
-    image: qaahaImage,
-    technologies: ["React", "Tailwind"],
-    github: "https://github.com/yourusername/qaaha",
-    liveDemo: "https://qaaha.vercel.app",
+    github: "https://github.com/rawaabaessa/foodi",
+    // liveDemo: "https://foodi.vercel.app",
   },
 
   {
     id: 5,
-    title: "Vegan Life",
-    image: veganLifeImage,
-    technologies: ["Next.js", "Tailwind"],
-    github: "https://github.com/yourusername/vegan-life",
-    liveDemo: "https://vegan-life.vercel.app",
+    title: "Sonriza",
+    image: sonrizaImage,
+    technologies: ["HTML", "CSS"],
+    github: "https://github.com/rawaabaessa/sonrisa",
   },
 ];

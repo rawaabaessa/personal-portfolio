@@ -7,7 +7,7 @@ import { useLang } from "../hooks/useLang";
 const SkillsSection = () => {
   const { t } = useLang("home");
   return (
-    <section className="px-6 py-16 md:px-10">
+    <section id="skills" className="px-6 py-16 md:px-10">
       <Container>
         <div className="flex flex-col items-center justify-center gap-15">
           <Heading title={t("skills.title")} />

@@ -7,7 +7,7 @@ import WorkItem from "./WorkItem";
 const Works = () => {
   const { t } = useLang("home");
   return (
-    <section className="px-6 py-16 md:px-10">
+    <section id="projects" className="px-6 py-16 md:px-10">
       <Container>
         <div className="flex flex-col gap-15">
           <Heading title={t("work.title")} />

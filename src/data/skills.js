@@ -8,6 +8,8 @@ import { AiFillGithub } from "react-icons/ai";
 import { FaGitAlt } from "react-icons/fa6";
 import { FaDatabase } from "react-icons/fa6";
 import { TbBrandTypescript } from "react-icons/tb";
+import { FaPhp } from "react-icons/fa6";
+import { FaLaravel } from "react-icons/fa6";
 
 export const SKILLS = [
   {
@@ -59,5 +61,15 @@ export const SKILLS = [
     id: 10,
     name: "SQL",
     image: FaDatabase,
+  },
+  {
+    id: 11,
+    name: "PHP",
+    image: FaPhp,
+  },
+  {
+    id: 12,
+    name: "Laravel",
+    image: FaLaravel,
   },
 ];

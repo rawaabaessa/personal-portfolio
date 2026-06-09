@@ -1,5 +1,5 @@
 import Container from "./Container";
-import { FaGithub, FaLinkedin, FaTiktok, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import SocialBtn from "./SocialBtn";
 import { Mail } from "lucide-react";
 import { useLang } from "../hooks/useLang";
@@ -15,18 +15,18 @@ const Footer = () => {
             <SocialBtn href={"https://github.com/rawaabaessa"}>
               <FaGithub size={20} />
             </SocialBtn>
-            <SocialBtn href={"rawaabaessa@gmail.com"}>
+            <SocialBtn href={"mailto:rawaabaessa@gmail.com"}>
               <Mail size={20} />
             </SocialBtn>
             <SocialBtn href={"whatsapp://send?phone=+967739665833"}>
               <FaWhatsapp size={20} />
             </SocialBtn>
-            <SocialBtn href={"https://www.linkedin.com/in/rawaabaessa/"}>
+            <SocialBtn href={"https://linkedin.com/in/rawaa-baessa"}>
               <FaLinkedin size={20} />
             </SocialBtn>
-            <SocialBtn href={"https://www.tiktok.com/@rawaabaessa"}>
+            {/* <SocialBtn href={"https://www.tiktok.com/@rawaabaessa"}>
               <FaTiktok size={20} />
-            </SocialBtn>
+            </SocialBtn> */}
           </div>
         </div>
       </Container>

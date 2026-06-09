@@ -12,7 +12,7 @@ const HeroSection = () => {
   const { lang } = useLanguage();
   const { theme } = useTheme();
   return (
-    <section className="relative text-white px-6 py-16 md:px-10">
+    <section id="home" className="relative text-white px-6 py-16 md:px-10">
       <Container>
         <div className="flex items-center flex-col md:flex-row">
           <div className="max-w-2xl flex flex-col items-center justify-baseline md:items-start gap-10">
@@ -35,7 +35,11 @@ const HeroSection = () => {
               </p>
             </div>
             <div className="flex items-center gap-5">
-              <Button>{t("hero.contact")}</Button>
+              <Button>
+                <a href={"whatsapp://send?phone=+967739665833"}>
+                  {t("hero.contact")}
+                </a>
+              </Button>
               <Button
                 variant="outline"
                 Icon={<ArrowDownToLine className="w-4 h-4 md:w-5 md:h-5" />}

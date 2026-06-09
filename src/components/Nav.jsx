@@ -6,6 +6,7 @@ import Language from "./Language";
 import { useLang } from "../hooks/useLang";
 import Theme from "./Theme";
 import { motion, useMotionValueEvent, useScroll } from "motion/react";
+
 const NAVITEMS = [
   {
     id: 1,
@@ -13,15 +14,15 @@ const NAVITEMS = [
   },
   {
     id: 2,
-    name: "about",
-  },
-  {
-    id: 3,
     name: "skills",
   },
   {
-    id: 4,
+    id: 3,
     name: "projects",
+  },
+  {
+    id: 4,
+    name: "contact",
   },
 ];
 
@@ -62,7 +63,9 @@ const Nav = () => {
             {NAVITEMS.map((item) => {
               return (
                 <NavItem key={item.id}>
-                  <li>{t(`nav.${item.name}`)}</li>
+                  <li>
+                    <a href={`#${item.name}`}>{t(`nav.${item.name}`)}</a>
+                  </li>
                 </NavItem>
               );
             })}

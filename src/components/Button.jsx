@@ -1,4 +1,4 @@
-const Button = ({ children, variant = "filled", Icon }) => {
+const Button = ({ children, variant = "filled", Icon, ...props }) => {
   const base =
     "dark:text-white text-xs sm:text-sm md:text-md py-3 px-8 rounded-full font-semibold flex items-center gap-2 transition duration-300 cursor-pointer ";
 
@@ -11,7 +11,7 @@ const Button = ({ children, variant = "filled", Icon }) => {
   };
 
   return (
-    <button className={`${base} ${styles[variant]}`}>
+    <button className={`${base} ${styles[variant]}`} {...props}>
       {children}
       {Icon && Icon}
     </button>
