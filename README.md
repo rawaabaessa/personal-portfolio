@@ -78,11 +78,6 @@ The UI design was provided as a Figma design and implemented as a fully responsi
 
 **Frontend Development:** Rawaa Baessa
 
-## 🔮 Future Improvements
-
-- Advanced animations
-- Backend-powered contact form
-
 ## 👩‍💻 Author
 
 **Rawaa Baessa**
