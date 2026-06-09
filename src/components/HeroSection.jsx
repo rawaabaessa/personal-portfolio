@@ -44,7 +44,9 @@ const HeroSection = () => {
                 variant="outline"
                 Icon={<ArrowDownToLine className="w-4 h-4 md:w-5 md:h-5" />}
               >
-                {t("hero.cv")}
+                <a href="/Rawaa-Baessa-CV.pdf" download="Rawaa-CV.pdf">
+                  {t("hero.cv")}
+                </a>
               </Button>
             </div>
           </div>
