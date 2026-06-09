@@ -20,6 +20,10 @@ The project focuses on performance, responsiveness, accessibility, and smooth an
 - Modern and clean UI
 - Optimized user experience
 
+## 📸 Screenshot
+
+![My Image](/src/assets/portfolio.png)
+
 ## 🛠️ Tech Stack
 
 - React
