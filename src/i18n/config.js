@@ -17,7 +17,7 @@ i18n.use(initReactI18next).init({
       common: arCommon,
     },
   },
-  fallbackLng: "en",
+  fallbackLng: "ar",
   interpolation: {
     escapeValue: false,
   },
