@@ -1,4 +1,4 @@
-const Input = ({ type, placeholder, value, onChange, name }) => {
+const Input = ({ type, placeholder, value, onChange, name, ...props }) => {
   const classes =
     "rounded-2xl border border-3 border-white text-white py-2 px-4 focus:border-mid-pink focus:outline-none placeholder-white placeholder-opacity-50 placeholder:text-xs";
   return type === "text" ? (
@@ -9,6 +9,7 @@ const Input = ({ type, placeholder, value, onChange, name }) => {
       value={value}
       onChange={onChange}
       className={classes}
+      {...props}
     />
   ) : (
     <textarea
@@ -16,7 +17,8 @@ const Input = ({ type, placeholder, value, onChange, name }) => {
       placeholder={placeholder}
       value={value}
       onChange={onChange}
-      className={`${classes}`}
+      className={`${classes} min-h-24`}
+      {...props}
     />
   );
 };

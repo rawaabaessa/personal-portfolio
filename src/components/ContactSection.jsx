@@ -9,54 +9,42 @@ import { CiLinkedin } from "react-icons/ci";
 import { useLang } from "../hooks/useLang";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { contactSchema } from "../../schema";
 
 const ContactSection = () => {
   const { t } = useLang("home");
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm({
+    resolver: zodResolver(contactSchema),
+    mode: "onChange",
   });
-  const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState(null); // success | error | null
 
-  const handleChange = (e) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    setLoading(true);
-    setStatus(null);
-
+  const onSubmit = async (data) => {
     try {
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
+          from_name: data.name,
+          from_email: data.email,
+          message: data.message,
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       );
 
+      reset();
       setStatus("success");
-
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
     } catch (error) {
       console.error(error);
       setStatus("error");
-    } finally {
-      setLoading(false);
     }
   };
 
@@ -69,30 +57,58 @@ const ContactSection = () => {
         <div className="flex flex-col gap-15 ">
           <Heading title={t("contact.title")} isStillWhite />
           <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="flex-1 flex flex-col gap-4">
                   <Input
                     type={"text"}
                     name="name"
                     placeholder={t("contact.name")}
-                    value={formData.name}
-                    onChange={handleChange}
+                    {...register("name")}
                   />
+                  {errors.name && (
+                    <p className="text-red-500 text-sm">
+                      {errors.name.message}
+                    </p>
+                  )}
                   <Input
                     type={"text"}
                     name="email"
-                    value={formData.email}
                     placeholder={t("contact.email")}
-                    onChange={handleChange}
+                    {...register("email")}
                   />
+                  {errors.email && (
+                    <p className="text-red-500 text-sm">
+                      {errors.email.message}
+                    </p>
+                  )}
                   <Input
                     type="textarea"
                     name="message"
                     placeholder={t("contact.message")}
-                    value={formData.message}
-                    onChange={handleChange}
+                    {...register("message")}
                   />
+                  {errors.message && (
+                    <p className="text-red-500 text-sm">
+                      {errors.message.message}
+                    </p>
+                  )}
+                  <div className="mt-4">
+                    <Button
+                      variant="filled"
+                      type="submit"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? (
+                        <div className="flex items-center gap-2">
+                          <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+                          <span>{t("contact.sending")}</span>
+                        </div>
+                      ) : (
+                        t("contact.send")
+                      )}
+                    </Button>
+                  </div>
                 </div>
                 <div className="flex-1 flex flex-col gap-4 text-white">
                   <ContactCard
@@ -118,12 +134,7 @@ const ContactSection = () => {
                   </ContactCard>
                 </div>
               </div>
-              <div className="mt-4">
-                <Button variant="filled" type="submit" disabled={loading}>
-                  {" "}
-                  {loading ? t("contact.sending") : t("contact.send")}
-                </Button>
-              </div>
+
               {status === "success" && (
                 <p className="text-white text-sm mt-5">
                   {t("contact.statusSucc")}

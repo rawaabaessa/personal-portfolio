@@ -54,7 +54,9 @@ const WorkItem = ({
                   variant="workBtn"
                   Icon={<FaGithub className="w-4 h-4 md:w-5 md:h-5" />}
                 >
-                  <a href={github}>{t("work.view")}</a>
+                  <a href={github} target="_blank">
+                    {t("work.view")}
+                  </a>
                 </Button>
               )
             }
@@ -65,7 +67,9 @@ const WorkItem = ({
                   <LuArrowRightFromLine className="w-4 h-4 md:w-5 md:h-5" />
                 }
               >
-                <a href={liveDemo}>{t("work.live")}</a>
+                <a href={liveDemo} target="_blank">
+                  {t("work.live")}
+                </a>
               </Button>
             )}
           </div>
