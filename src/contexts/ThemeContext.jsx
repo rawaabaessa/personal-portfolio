@@ -1,11 +1,10 @@
 import { createContext, useContext, useEffect, useState } from "react";
+import { readStoredTheme, writeStoredTheme } from "../storage.js";
 
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "light";
-  });
+  const [theme, setTheme] = useState(() => readStoredTheme());
 
   const toggleTheme = () => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
@@ -20,7 +19,7 @@ export const ThemeProvider = ({ children }) => {
       root.classList.remove("dark");
     }
 
-    localStorage.setItem("theme", theme);
+    writeStoredTheme(theme);
   }, [theme]);
 
   return (

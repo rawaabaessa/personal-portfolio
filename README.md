@@ -22,8 +22,6 @@ The project focuses on performance, responsiveness, accessibility, and smooth an
 
 ## 📸 Screenshot
 
-![My Image](/src/assets/portfolio.png)
-
 ## 🛠️ Tech Stack
 
 - React

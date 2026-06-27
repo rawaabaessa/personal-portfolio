@@ -119,7 +119,7 @@ const ContactSection = () => {
                 </div>
               </div>
               <div className="mt-4">
-                <Button variant="filled" type="submit" disable={loading}>
+                <Button variant="filled" type="submit" disabled={loading}>
                   {" "}
                   {loading ? t("contact.sending") : t("contact.send")}
                 </Button>
