@@ -41,11 +41,12 @@ debugLog(
 
 createRoot(rootElement).render(
   <StrictMode>
-    <ThemeProvider>
+    <h1>hello world</h1>
+    {/* <ThemeProvider>
       <LanguageProvider>
         <App />
       </LanguageProvider>
-    </ThemeProvider>
+    </ThemeProvider> */}
   </StrictMode>,
 );
 
