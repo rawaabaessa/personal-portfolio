@@ -22,7 +22,7 @@ const Home = () => {
         </div>
         <div className="relative z-10 ">
           <Header />
-          <HeroSection />
+          {/* <HeroSection /> */}
           {/* <SkillsSection />
           <Works />
           <ContactSection />

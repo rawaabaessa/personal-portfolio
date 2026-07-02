@@ -36,7 +36,11 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center gap-5">
               <Button>
-                <a href={"whatsapp://send?phone=+967739665833"}>
+                <a
+                  href="https://wa.me/967739665833"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {t("hero.contact")}
                 </a>
               </Button>

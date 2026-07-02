@@ -121,7 +121,7 @@ const ContactSection = () => {
                   <ContactCard
                     type={"whatsupp"}
                     disc={"967739665833+"}
-                    href={"whatsapp://send?phone=+967739665833"}
+                    href={"https://wa.me/967739665833"}
                   >
                     <BsWhatsapp size={24} />
                   </ContactCard>
