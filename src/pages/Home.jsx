@@ -4,10 +4,10 @@ import Header from "../components/Header";
 // import HeroSection from "../components/HeroSection";
 // import SkillsSection from "../components/SkillsSection";
 // import Works from "../components/Works";
-// import { useLanguage } from "../hooks/useLanguage";
+import { useLanguage } from "../hooks/useLanguage";
 
 const Home = () => {
-  // const { lang } = useLanguage();
+  const { lang } = useLanguage();
   return (
     <>
       <Header />
