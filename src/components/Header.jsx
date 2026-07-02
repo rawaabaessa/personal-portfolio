@@ -12,7 +12,7 @@ const Header = () => {
       </header>
       <header className="sticky top-0 w-full z-50">
         <div className="flex items-center justify-between px-6 py-6 lg:px-32">
-          <img src={logoLight} className="w-10 md:w-16" />
+          <img src={logoLight} className="w-10 md:w-16 z-100" />
           {/* {theme === "dark" ? (
             <img src={logoDark} className="w-10 md:w-16" />
           ) : (
