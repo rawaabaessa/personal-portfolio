@@ -19,7 +19,10 @@
   "work": {
     "title": "My Works",
     "view": "View Code",
-    "live": "Live Demo"
+    "live": "Live Demo",
+    "mhami": "Mhami",
+    "portfolio": "Portfolio",
+    "qaaha": "Qaaha"
   },
   "contact": {
     "title": "Contact Me",
