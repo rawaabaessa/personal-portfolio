@@ -7,7 +7,6 @@ const Header = () => {
   const { theme } = useTheme();
   return (
     <>
-      {/* todo : using motion when scroll add background color to header */}
       <header className="sticky top-0 w-full z-50">
         <div className="flex items-center justify-between px-6 py-6 lg:px-32">
           {theme === "dark" ? (

@@ -4,7 +4,7 @@ import { SKILLS } from "../data/skills";
 import { LuArrowRightFromLine } from "react-icons/lu";
 import { useLang } from "../hooks/useLang";
 import Revel from "./Revel";
-import { debugLog } from "../debugLog.js";
+// import { debugLog } from "../debugLog.js";
 
 const WorkItem = ({
   title,
@@ -32,12 +32,12 @@ const WorkItem = ({
               const skill = SKILLS.find((item) => item.name === tech);
               // #region agent log
               if (!skill) {
-                debugLog(
-                  "WorkItem.jsx:skill",
-                  "missing skill mapping",
-                  { title, tech },
-                  "H3",
-                );
+                // debugLog(
+                //   "WorkItem.jsx:skill",
+                //   "missing skill mapping",
+                //   { title, tech },
+                //   "H3",
+                // );
               }
               // #endregion
               const Icon = skill.image;
