@@ -1,6 +1,6 @@
 // import ContactSection from "../components/ContactSection";
 // import Footer from "../components/Footer";
-// import Header from "../components/Header";
+import Header from "../components/Header";
 // import HeroSection from "../components/HeroSection";
 // import SkillsSection from "../components/SkillsSection";
 // import Works from "../components/Works";
@@ -10,7 +10,7 @@ const Home = () => {
   // const { lang } = useLanguage();
   return (
     <>
-      <h1>home</h1>
+      <Header />
     </>
     // <div className="relative min-h-screen bg-light-background dark:bg-background overflow-hidden">
     //   <div className="flex flex-col">
