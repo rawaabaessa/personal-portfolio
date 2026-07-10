@@ -20,7 +20,7 @@ const Home = () => {
             className={`absolute ${lang === "en" ? "-left-50" : "-right-50"} top-60 w-64 h-64 md:w-180 md:h-180 bg-mid-pink/50 blur-3xl rounded-full opacity-20 pointer-events-none`}
           />
         </div>
-        <div className="relative z-10 ">
+        <div className="relative z-10">
           <Header />
           <HeroSection />
           <SkillsSection />
