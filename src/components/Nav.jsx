@@ -64,7 +64,9 @@ const Nav = () => {
               return (
                 <li>
                   <NavItem key={item.id}>
-                    <a href={`#${item.name}`}>{t(`nav.${item.name}`)}</a>
+                    <a href={`#${item.name}`} className="text-sm">
+                      {t(`nav.${item.name}`)}
+                    </a>
                   </NavItem>
                 </li>
               );
