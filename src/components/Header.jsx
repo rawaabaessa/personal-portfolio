@@ -12,6 +12,8 @@ const Header = () => {
           {theme === "dark" ? (
             <img
               src={logoDark}
+              width={64}
+              height={64}
               className="w-10 md:w-16"
               alt="logo"
               fetchPriority="high"
@@ -19,6 +21,8 @@ const Header = () => {
           ) : (
             <img
               src={logoLight}
+              width={64}
+              height={64}
               className="w-10 md:w-16"
               alt="logo"
               fetchPriority="high"
