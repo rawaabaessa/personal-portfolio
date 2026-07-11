@@ -6,7 +6,7 @@ const Language = () => {
   const { toggleLang } = useLanguage();
 
   return (
-    <button onClick={toggleLang}>
+    <button onClick={toggleLang} aria-label="Toggle Language">
       <NavItem>
         <Globe />
       </NavItem>

@@ -62,6 +62,7 @@ const HeroSection = () => {
               src={theme === "dark" ? heroImage : heroImageLight}
               alt="Hero Image"
               className="w-75 md:w-125 lg:w-130 h-130"
+              fetchPriority="high"
             />
           </div>
         </div>

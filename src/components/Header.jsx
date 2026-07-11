@@ -10,9 +10,19 @@ const Header = () => {
       <header className="sticky top-0 w-full z-50">
         <div className="flex items-center justify-between px-6 py-6 lg:px-32">
           {theme === "dark" ? (
-            <img src={logoDark} className="w-10 md:w-16" />
+            <img
+              src={logoDark}
+              className="w-10 md:w-16"
+              alt="logo"
+              fetchPriority="high"
+            />
           ) : (
-            <img src={logoLight} className="w-10 md:w-16" />
+            <img
+              src={logoLight}
+              className="w-10 md:w-16"
+              alt="logo"
+              fetchPriority="high"
+            />
           )}
           <Nav />
         </div>

@@ -64,7 +64,7 @@ const WorkItem = ({
           </div>
         </div>
         <Revel>
-          <div className="">
+          <div>
             <img
               src={image}
               alt={title}

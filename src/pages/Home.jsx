@@ -22,11 +22,13 @@ const Home = () => {
         </div>
         <div className="relative z-10">
           <Header />
-          <HeroSection />
-          <SkillsSection />
-          <Works />
-          <ContactSection />
-          <Footer />
+          <main>
+            <HeroSection />
+            <SkillsSection />
+            <Works />
+            <ContactSection />
+            <Footer />
+          </main>
         </div>
       </div>
     </div>

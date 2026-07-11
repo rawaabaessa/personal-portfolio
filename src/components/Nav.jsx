@@ -62,11 +62,11 @@ const Nav = () => {
           >
             {NAVITEMS.map((item) => {
               return (
-                <NavItem key={item.id}>
-                  <li>
+                <li>
+                  <NavItem key={item.id}>
                     <a href={`#${item.name}`}>{t(`nav.${item.name}`)}</a>
-                  </li>
-                </NavItem>
+                  </NavItem>
+                </li>
               );
             })}
           </motion.ul>
