@@ -27,8 +27,8 @@ const Home = () => {
             <SkillsSection />
             <Works />
             <ContactSection />
-            <Footer />
           </main>
+          <Footer />
         </div>
       </div>
     </div>
